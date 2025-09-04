@@ -17,6 +17,8 @@ set_target_properties(
     RUNTIME_OUTPUT_DIRECTORY ${TARGET_OUTPUT_DIRECTORY}
 )
 
+target_link_options(MarchingCubesTable PRIVATE -static -static-libgcc -static-libstdc++)
+
 # Includes.
 target_include_directories(
     MarchingCubesTable PRIVATE
